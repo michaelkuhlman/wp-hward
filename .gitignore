@@ -1,0 +1,114 @@
+# -------------------------
+# OS / Editor / Tooling
+# -------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node / builds (often used inside themes/plugins)
+node_modules/
+bower_components/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn*.log
+pnpm-debug.log*
+
+# Composer (often used in custom plugins/themes)
+vendor/
+
+# Env / local overrides
+.env
+.env.*
+*.env
+*.local
+*.local.php
+*.local.json
+wp-cli.local.yml
+*.code-workspace
+
+# Archives / dumps
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.sql
+*.sql.gz
+
+# -------------------------
+# WordPress core (don’t track)
+# -------------------------
+/wp-admin/
+/wp-includes/
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+
+# Root env-specific files
+wp-config.php
+wp-config-*.php
+.htaccess
+web.config
+sitemap.xml
+sitemap.xml.gz
+sitemap-*.xml
+
+# -------------------------
+# wp-content: ignore all, then whitelist code
+# -------------------------
+/wp-content/*
+!/wp-content/index.php
+!/wp-content/mu-plugins/
+!/wp-content/plugins/
+!/wp-content/themes/
+# Common non-code directories to ignore
+/wp-content/uploads/
+/wp-content/languages/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backups/
+/wp-content/ai1wm-backups/
+/wp-content/wflogs/
+/wp-content/debug.log
+/wp-content/object-cache.php
+/wp-content/advanced-cache.php
+/wp-content/db.php
+
+# -------------------------
+# Themes: track only your themes
+# -------------------------
+/wp-content/themes/*
+!/wp-content/themes/my-theme/
+!/wp-content/themes/my-child-theme/
+
+# If you want to also track a specific parent theme you’ve customized (rare):
+# !/wp-content/themes/parent-theme-name/
+
+# -------------------------
+# Plugins: track only your custom plugins
+# -------------------------
+/wp-content/plugins/*
+!/wp-content/plugins/my-custom-plugin/
+
+# Add more custom plugins here as needed:
+# !/wp-content/plugins/another-custom-plugin/
+
+# -------------------------
+# Optional: Elementor/other generated assets (safe to ignore)
+# -------------------------
+/wp-content/uploads/elementor/
+/wp-content/uploads/cache/
+/wp-content/uploads/wpo-plugins-tables-list.json
+
+
+
+creds.txt
